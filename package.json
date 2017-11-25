@@ -52,7 +52,7 @@
   "dependencies": {
     "@unction/attach": "3.14.1",
     "@unction/key": "4.11.0",
-    "@unction/reducewithvaluekey": "4.40.0"
+    "@unction/reducewithvaluekey": "5.0.0"
   },
   "nyc": {
     "require": [
