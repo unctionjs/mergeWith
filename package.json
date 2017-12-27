@@ -52,9 +52,9 @@
     "tap": "11.0.0"
   },
   "dependencies": {
-    "@unction/attach": "4.0.0",
-    "@unction/key": "5.0.0",
-    "@unction/reducewithvaluekey": "6.0.0"
+    "@unction/attach": "5.0.0",
+    "@unction/key": "6.0.0",
+    "@unction/reducewithvaluekey": "7.0.0"
   },
   "nyc": {
     "require": [
