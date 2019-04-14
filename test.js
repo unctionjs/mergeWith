@@ -1,7 +1,7 @@
 /* eslint-disable flowtype/require-return-type */
-import {test} from "tap"
+import {test} from "tap";
 
-import mergeWith from "./index"
+import mergeWith from "./index";
 
 test(({same, end}) => {
   same(
@@ -13,10 +13,10 @@ test(({same, end}) => {
       {beta: "b"}
     ),
     {beta: "ba"}
-  )
+  );
 
-  end()
-})
+  end();
+});
 
 test(({same, end}) => {
   same(
@@ -38,7 +38,7 @@ test(({same, end}) => {
       beta: "12",
       zeta: "3",
     }
-  )
+  );
 
-  end()
-})
+  end();
+});
