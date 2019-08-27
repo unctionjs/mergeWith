@@ -1,7 +1,7 @@
-/* eslint-disable flowtype/require-return-type */
+
 import {test} from "tap";
 
-import mergeWith from "./index";
+import mergeWith from "./";
 
 test(({same, end}) => {
   same(
