@@ -1,8 +1,11 @@
 import reduceWithValueKey from "@unction/reducewithvaluekey";
 import get from "@unction/get";
 import attach from "@unction/attach";
-export default function mergeWith (unction) {
-  return reduceWithValueKey((accumulated) => (value) => (key) => {
+import {MapperFunctionType} from "./types";
+import {EnumerableType} from "./types";
+
+export default function mergeWith<A> (unction: MapperFunctionType<A, MapperFunctionType<A, A>>) {
+  return reduceWithValueKey((accumulated: EnumerableType<A>) => (value: A) => (key: unknown): EnumerableType<A> => {
     if (get(key)(accumulated)) {
       return attach(key)(unction(get(key)(accumulated))(value))(accumulated);
     }

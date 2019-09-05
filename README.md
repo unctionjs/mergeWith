@@ -5,9 +5,9 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> (ValueType => ValueType => ValueType) => FunctorType => FunctorType => FunctorType
+> MapperFunctionType<A, MapperFunctionType<A, A>> => EnumerableType<A> => EnumerableType<A> => EnumerableType<A>
 
-Merges two iterables and uses a provided function to handle conflicts. The function is given the the left value and the right value.
+Merges two enumerables and uses a provided function to handle conflicts. The function is given the the left value and the right value.
 
 ``` javascript
 const left = {
