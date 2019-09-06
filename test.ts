@@ -1,5 +1,5 @@
 
-import mergeWith from "./index.ts";
+import mergeWith from "./index";
 
 test(() => {
   expect(mergeWith(
