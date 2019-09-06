@@ -1,7 +1,7 @@
 
 import mergeWith from "./index";
 
-test(() => {
+test("works", () => {
   expect(mergeWith(
     (left) => (right) => right + left
   )(
@@ -11,7 +11,7 @@ test(() => {
   )).toEqual({beta: "ba"});
 });
 
-test(() => {
+test("works", () => {
   expect(mergeWith(
     (left) => (right) => left + right
   )(
