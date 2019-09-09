@@ -53,9 +53,9 @@
     "typescript": "3.5.1"
   },
   "dependencies": {
-    "@unction/attach": "7.9.0",
-    "@unction/get": "2.9.0",
-    "@unction/reducewithvaluekey": "11.9.0"
+    "@unction/attach": "7.10.0",
+    "@unction/get": "2.10.0",
+    "@unction/reducewithvaluekey": "11.10.0"
   },
   "files": [
     "index.ts",
