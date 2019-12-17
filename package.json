@@ -1,6 +1,6 @@
 {
   "name": "@unction/mergewith",
-  "version": "13.10.0",
+  "version": "13.10.1",
   "description": "Takes a function that determines how to merge two conflicting values in a merge",
   "keywords": [
     "unction",
