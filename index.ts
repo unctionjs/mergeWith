@@ -4,7 +4,7 @@ import attach from "@unction/attach";
 import {MapperFunctionType} from "./types";
 
 export default function mergeWith<A> (unction: MapperFunctionType<A, MapperFunctionType<A, A>>) {
-  return reduceWithValueKey((accumulated: Array<A> | Set<A> | RecordType<unknown, A> | string) => (value: A) => (key: unknown): Array<A> | Set<A> | RecordType<unknown, A> | string => {
+  return reduceWithValueKey((accumulated: Array<A> | Set<A> | Record<string | number | symbol, B> | Map<B, A> | string) => (value: A) => (key: unknown): Array<A> | Set<A> | Record<string | number | symbol, B> | Map<B, A> | string => {
     if (get(key)(accumulated)) {
       return attach(key)(unction(get(key)(accumulated))(value))(accumulated);
     }
